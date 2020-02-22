@@ -24,7 +24,11 @@ function Routes() {
                     },
                 }}>
                 <Stack.Screen name="Users" component={Main} />
-                <Stack.Screen name="GitHub" component={User} />
+                <Stack.Screen
+                    name="User"
+                    options={({route}) => ({title: route.params.user.login})}
+                    component={User}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     );
