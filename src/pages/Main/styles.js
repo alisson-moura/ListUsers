@@ -5,3 +5,7 @@ export const Container = styled.View`
     padding: 20px;
     background-color: #eee;
 `;
+
+export const Form = styled.View``;
+
+export const Input = styled.TextI;
