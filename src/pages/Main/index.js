@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Container, Form, Input, Submit} from './styles';
 
 export default function Main() {
@@ -8,9 +9,11 @@ export default function Main() {
                 <Input
                     autoCorrect={false}
                     autoCaptalize="none"
-                    placeHolder="Adicionar usuário"
+                    placeholder="Adicionar usuário"
                 />
-                <Submit />
+                <Submit>
+                    <Icon name="add" size={20} color="#FFF" />
+                </Submit>
             </Form>
         </Container>
     );
